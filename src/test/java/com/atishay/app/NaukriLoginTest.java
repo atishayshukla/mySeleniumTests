@@ -17,7 +17,8 @@ public class NaukriLoginTest extends BaseTest {
         naukriLoginPage.selectEmailIDAsSelector();
         naukriLoginPage.setEmailIDInputField(USER_NAME);
         naukriLoginPage.setPasswordInputField(PASSWORD);
-        naukriLoginPage.ClickLoginButtonOnCredsField();
+        HomePage homePage = naukriLoginPage.ClickLoginButtonOnCredsField();
         Assert.assertEquals(naukriLoginPage.getTitle(),"Mynaukri");
+        homePage.hoverAndClickLogoutButton();
     }
 }

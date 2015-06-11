@@ -42,9 +42,10 @@ public class NaukriLoginPage extends AbstractPage {
         driver.findElement(passwordInputField).clear();
         driver.findElement(passwordInputField).sendKeys(password);
     }
-    public void ClickLoginButtonOnCredsField(){
+    public HomePage ClickLoginButtonOnCredsField(){
         driver.findElement(LoginButtonOnCredsField).click();
         wait.until(ExpectedConditions.titleIs("Mynaukri"));
+        return new HomePage(driver);
     }
     public String getTitle(){
         return driver.getTitle();
