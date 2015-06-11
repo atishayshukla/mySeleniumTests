@@ -7,6 +7,9 @@
     <version>1.0-SNAPSHOT</version>
     <name>my-selenium</name>
     <url>http://maven.apache.org</url>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
     <build>
         <plugins>
             <plugin>
@@ -18,6 +21,44 @@
                         <suiteXmlFile>src\test\resources\testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>ch.fortysix</groupId>
+                <artifactId>maven-postman-plugin</artifactId>
+                <version>0.1.6</version>
+                <executions>
+                    <execution>
+                        <id>Send_An_Email</id>
+                        <goals>
+                            <goal>surefire-mail</goal>
+                        </goals>
+                        <inherited>true</inherited>
+                        <configuration>
+                            <mailhost>smtp.gmail.com</mailhost>
+                            <mailport>995</mailport>
+                            <mailssl>true</mailssl>
+                            <mailAltConfig>true</mailAltConfig>
+                            <mailuser>atishayshukla@gmail.com</mailuser>
+                            <mailpassword>pamaskhush@sh!</mailpassword>
+
+                            <from>atishayshukla@gmail.com</from>
+                            <receivers>
+                                <receiver>shikha.sh24@gmail.com</receiver>
+                                <receiver>atishayshukla@gmail.com</receiver>
+                            </receivers>
+                            <subject>Test Automation Report</subject>
+                            <failonerror>false</failonerror>
+                            <htmlMessage>
+                                <![CDATA[
+                    <p>Partner, we have a new deployment!</p>
+                    <br>
+                    <p>Have a nice day.</p>
+                    ]]>
+                            </htmlMessage>
+                        </configuration>
+                    </execution>
+                </executions>
+
             </plugin>
         </plugins>
     </build>

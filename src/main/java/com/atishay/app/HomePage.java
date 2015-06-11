@@ -3,6 +3,7 @@ package com.atishay.app;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 /**
  * Created by Atishay on 6/11/2015.
@@ -23,6 +24,7 @@ public class HomePage extends AbstractPage {
     public void hoverAndClickLogoutButton(){
         Actions actions = new Actions(driver);
         actions.clickAndHold(driver.findElement(LogoutIconCss)).perform();
+        wait.until(ExpectedConditions.presenceOfElementLocated(LogoutButtonCss));
         driver.findElement(LogoutButtonCss).click();
     }
 }
