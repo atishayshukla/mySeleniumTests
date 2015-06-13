@@ -23,8 +23,8 @@ public class HomePage extends AbstractPage {
 
     public void hoverAndClickLogoutButton(){
         Actions actions = new Actions(driver);
-        actions.clickAndHold(driver.findElement(LogoutIconCss)).perform();
+        actions.moveToElement(driver.findElement(LogoutIconCss)).perform();
         wait.until(ExpectedConditions.presenceOfElementLocated(LogoutButtonCss));
-        driver.findElement(LogoutButtonCss).click();
+        actions.moveToElement(driver.findElement(LogoutButtonCss)).click();
     }
 }
