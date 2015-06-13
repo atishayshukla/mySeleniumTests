@@ -31,8 +31,8 @@
       <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/atishay/app/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8695652" vertical-offset="0" max-vertical-offset="493">
-              <caret line="27" column="75" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
+            <state vertical-scroll-proportion="0.7826087" vertical-offset="51" max-vertical-offset="510">
+              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -482,7 +482,13 @@
       <option name="project" value="LOCAL" />
       <updated>1434193163532</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Stalesness of logout button added">
+      <created>1434194000042</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1434194000042</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -531,7 +537,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="ReportNg Configured in the code" />
-    <option name="LAST_COMMIT_MESSAGE" value="ReportNg Configured in the code" />
+    <MESSAGE value="Stalesness of logout button added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stalesness of logout button added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -762,8 +769,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/atishay/app/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8695652" vertical-offset="0" max-vertical-offset="493">
-          <caret line="27" column="75" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
+        <state vertical-scroll-proportion="0.7826087" vertical-offset="51" max-vertical-offset="510">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
           <folding />
         </state>
       </provider>
