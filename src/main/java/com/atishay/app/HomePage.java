@@ -26,6 +26,6 @@ public class HomePage extends AbstractPage {
         actions.moveToElement(driver.findElement(LogoutIconCss)).perform();
         wait.until(ExpectedConditions.presenceOfElementLocated(LogoutButtonCss));
         actions.moveToElement(driver.findElement(LogoutButtonCss)).click();
-        
+
     }
 }
